@@ -1,2 +1,7 @@
-# wine-and-dine
-Project 1
+# Wine & Dine - Project 1
+
+## Description
+
+## Demo
+
+## Collaborators
