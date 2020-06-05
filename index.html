@@ -3,46 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wine & Dine</title>
+  <title>Find & Dine</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel= "stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">Wine and Dine</a>
-          <p>Search for Recipes</p>
+        <div class="nav-wrapper" id="titleBar">
+          <a href="#" class="brand-logo center">Find and Dine</a>
+          <p id="description">Search for Recipes</p>
         </div>
       </nav>
 
-      <div class= "container">
+      <div class= "container" id="searchBar">
           <div class= "row">
             <div class= "col s6">
                 <input placeholder="ex. chicken" id="ingredients" type="text" class="validate">
                   <label for="ingredients">Search Recipes</label>    
                 </div>
-                <div class= "col s6">
-                    <input placeholder="ex. margharita" id="cocktails" type="text" class="validate">
-                      <label for="cocktails">Search Cocktails</label>    
-                    </div>
           </div>
           <div class= "row">
             <div class="col s12">
-              <div class="card">
+              <div class="card" id="resultsCard">
                 <div class="card-image">
-                  <img> 
+                  <img href="???"> 
                   <!--recipe results-->
-                  <span class="card-title">Recipe Result</span>
+                  <span class="card-title" id="cardTitle">Recipes:</span>
                 </div>
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <p>Description of the Recipe/Article</p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
+                  <a href="#">Recipe Link</a>
                 </div>
               </div>
             </div>
           </div> 
       </div>
 </body>
+<footer class="page-footer">
+  <div class="container">
+    <div class= "row">
+      <div class= "col s4">
+        <a id="edamamLink" href="https://developer.edamam.com/">Edamam</a>
+      </div>
+      <div class= "col s4" id="ourNames">
+        Project by: Michael Kelly, John Manouse, Kekeli Afantchao, Tanisha Sandiford, Matthew Nelson, Scott St. Germain
+      </div>
+      <div class= "col s4" id="pexelsText">
+        <a id="pexelsLink" href="https://www.pexels.com/api/">Pexels</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+   
 </html>
