@@ -1,0 +1,43 @@
+#titleBar {
+  background-image: url('../../assets/images/background-hardwood-smooth-surface-301717.jpg');
+}
+
+#description{
+  margin: 5px;
+  text-align: right;
+}
+#resultsCard {
+  margin: 5%;
+}
+
+#cardTitle{
+color: black;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  background-image: url('../../assets/images/background-hardwood-smooth-surface-301717.jpg');
+}
+
+#edamamLink {
+  text-align: left;
+  color: white !important;
+}
+
+#pexelsText {
+  text-align: right;
+}
+
+#pexelsLink {
+  text-align: right;
+  color: white !important;
+}
+
+#ourNames {
+  text-align: center;
+}
+  /*Don't forget to add padding so the recipe search doesn't fuck up */
