@@ -10,9 +10,12 @@ $(document).ready(function() {
     if (event.key === "Enter") {
       var ingredientsVal = $("#ingredients").val();
       console.log(ingredientsVal);
-      buildQueryURL(ingredientsVal)
-      
+      buildQueryURL(ingredientsVal)  
     }
+  
+  if (ingredientsVal === undefined) {
+    return;
+  }
   })
 })
 
@@ -28,16 +31,21 @@ function buildQueryURL(ingredientsVal){
     dataType: "json",
     success: function(data) {
       console.log(data);
-      var cardTitle = $("<h3>").addClass("recipe-title").text(data.hits[0].recipe.label);
-      var recipeLink = $("<p>").addClass("recipe-content").text(data.hits[0].recipe.shareAs);
-      var card = $("#card");
-      card.append(cardTitle);
-      card.append(recipeLink);
+      for (i = 0; i < data.hits.length; i++){
+        var cardTitle = $("<h3>").addClass("recipe-title").text(data.hits[i].recipe.label);
+        var recipeLink = $("<p>").addClass("recipe-content").text(data.hits[i].recipe.shareAs);
+        var cardImg = $("<img>").attr("src", data.hits[i].recipe.image);
+        cardImg.addClass("center");
+        var card = $("#card");
+        card.append(cardTitle);
+        card.append(recipeLink);
+        card.append(cardImg);
+      }
 
     }
   });
 
 };
 
-buildQueryURL();
+
 
