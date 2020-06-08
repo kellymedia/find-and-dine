@@ -6,6 +6,9 @@ This web app provides recipe ideas for users based on the ingredients they want 
 ## Demo
 Click here for a [demo](https://kellymedia.github.io/find-and-dine/) of this project.
 
+## Presentation 
+Click here to view the [presentation slide deck](https://docs.google.com/presentation/d/1JO5FZU-luV9tPNfq06gPceGniNkAUu3HxsO7Yhjz2jo/edit?usp=sharing).
+
 ## Collaborators
 [Kekeli Afantchao](https://github.com/KekeliVA)  
 [Scott St. Germain](https://github.com/Scott7710)  
