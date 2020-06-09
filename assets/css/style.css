@@ -159,3 +159,6 @@
  }
  
  
+ .parallax-container .parallax img {
+  opacity: 100 !important;
+}
