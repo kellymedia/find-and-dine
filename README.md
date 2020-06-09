@@ -4,12 +4,11 @@
 This web app provides recipe ideas for users based on the ingredients they want to use. A user can enter their ingredients in the search field to find recipe ideas for their meal.
 
 ## Sources
-https://www.pexels.com/api/new/
-https://developer.edamam.com/
-https://materializecss.com/
+https://www.pexels.com/api/new/ /
+https://developer.edamam.com/ /
+https://materializecss.com/ /
 
 ## Demo
-(assets/demoscreenshot.png)
 
 Click here for a [demo](https://kellymedia.github.io/find-and-dine/) of this project.
 
