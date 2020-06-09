@@ -1,44 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wine & Dine</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
-<body>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">Find and Dine</a>
-          <p>Search for Recipes</p>
-        </div>
-      </nav>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Find & Dine</title>
 
-      <div class= "container">
-          <div class= "row">
-            <div class= "col s12">
-                <input placeholder="ex. chicken" id="ingredients" type="text" class="validate">
-                <label for="ingredients">Search Recipes</label>    
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+    <nav class="light-green lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo right hide-on-sm-and-down">
+            <img src="assets/logo.png" alt="logo" align-right width="170" height="170">
+            
+            <ul class="left hide-on-med-and-down">
+                <li><a href="https://kellymedia.github.io/find-and-dine/">Home</a></li>
+                
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+            
+            <h1 class="header center light-green-text">Find & Dine</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Cook up some creativity, with this recipe search! </h5>
             </div>
+            
+            </div>
+        </div>
+
+
+    <div class="container">
+        <div class="section">
+
+        <!--Icon Section   -->
+        <div class="row">
+            <div class="col s12 m4 l2">
+                <div class="icon-block">
+                    <h2 class="center light-green-text"><i class="material-icons">local_dining</i></h2>
+                    <h5 class="center">Search Recipes</h5>
+
+                    <p class="light">Use the basics like Beef, Chicken, or Fish to find a variety of recipes.</p>
+                    <br>
+                    <input placeholder="ex. chicken" id="ingredients" type="text" class="validate">
+                        <label for="ingredients">Search Recipes</label>  
+                </div>
+            </div>
+
+            <div class="col s12 m4 l8 align center">
+                <img class="responsive-img">
+                    <source media="(min-width: 250px)">
+                    <img src="assets/img_food.jpg" class="responsive-img" style="width:auto;">
+                    
+                <br>
+                This <a href="https://www.pexels.com/photo/food-dinner-lunch-meal-4147875">Photo</a> was taken by <a href="https://www.pexels.com/@daria">Daria</a> on Pexels.
+            </div>
+
+            <div class="col s12 m4 l2">
+                <div class="icon-block">
+                    <h2 class="center light-green-text"><i class="material-icons">local_grocery_store</i></h2>
+                    <h5 class="center">Search Ingredients</h5>
+
+                    <p class="light">What's in your spice collection?<br> Enter a few items, and see what might surprise you!</p>
+                    <input placeholder="ex. oregano" id="ingredients" type="text" class="validate">
+                        <label for="ingredients">Search Ingredients</label>  
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <br><br>
+    </div>
+
+    <div class= "row">
+      <div class="col s12">
+        <div class="card" id="resultsCard">
+          <div class="card-image">
+            <img href="???"> 
+            <!--recipe results-->
+            <span class="card-title" id="cardTitle">Recipes:</span>
           </div>
-          <div class= "row">
-            <div class="col s12">
-              <div class="card">
-                <div class="card-image">
-                  <img> 
-                  <!--recipe results-->
-                  <span class="card-title">Recipe Result</span>
-                </div>
-                <div id="card" class="card-content">
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                </div>
-              </div>
-            </div>
-          </div> 
+          <div class="card-content">
+            <p>Description of the Recipe/Article</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Recipe Link</a>
+          </div>
+        </div>
       </div>
+    </div>
+
+  <footer class="page-footer light-green">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Find & Dine Bio</h5>
+          <p class="grey-text text-lighten-4">A group of collaborators working to bring you <br>
+                                              a fun & memorable dining experience. </p>
+
+
+        </div>
+        <div class="col l2 s12">    
+        </div>
+        
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="#!">https://github.com/kellymedia/find-and-dine</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="white-text text-lighten-3" href="https://www.edamam.com/"">edamam</a>
+      </div>
+<<<<<<< HEAD
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="script.js"></script>
+=======
+        <div class="container">
+          Made by <a class="white-text text-lighten-3" href="https://www.pexels.com/">pexels</a>
+        </div>
+      <div class="container">
+        Made by <a class="white-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+>>>>>>> master
 </body>
 </html>
