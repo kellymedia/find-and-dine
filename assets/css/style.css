@@ -6,17 +6,156 @@
  * Made By MaterializeCSS.com
  */
 
-.icon-block {
-  padding: 0 15px;
-  
-}
-.icon-block .material-icons {
-	font-size: inherit;
-}
-.footer-copyright{
-	text-align: center;
+ nav ul a,
+ nav .brand-logo {
+   color: #444;
+ }
  
-}
-#cardTitle {
-    color: black;
-}
+ p {
+   line-height: 2rem;
+   font-family: 'Roboto', sans-serif;
+   text-align: center;
+   font-size: 125%;
+ }
+ 
+ h1 {
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   color: #fff !important;
+   font-family: 'Playfair Display', serif; 
+ }
+ 
+ #quote-block {
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   color: #fff;
+   font-family: 'Playfair Display', serif;
+ }
+ 
+ .parallax-container {
+   min-height: 380px;
+   line-height: 0;
+   height: auto;
+   color: rgba(255,255,255,.9);
+   background-color: rgba(0, 0, 0, 0.4);
+ 
+ }
+   .parallax-container .section {
+     width: 100%;
+   }
+ 
+ @media only screen and (max-width : 992px) {
+   .parallax-container .section {
+     position: absolute;
+     top: 40%;
+   }
+   #index-banner .section {
+     top: 10%;
+   }
+ }
+ 
+ @media only screen and (max-width : 600px) {
+   #index-banner .section {
+     top: 0;
+   }
+ }
+ 
+ .icon-block {
+   padding: 0 15px;
+ }
+ .icon-block .material-icons {
+   font-size: 175%;
+ }
+ 
+ .icon-block h6 {
+   font-family: 'Playfair Display', serif;
+ }
+ 
+ .icon-block h5 {
+   color: #31A354;
+ }
+ 
+ footer.page-footer {
+   margin: 0;
+ }
+ 
+ .page-footer {
+   background-color: #ffffff;
+   padding-top: 0px;
+   color: #ffffff;
+ }
+ 
+ .page-footer a {
+   color: #006D2C;
+ }
+ 
+ .page-footer a:hover {
+   color: #006D2C;
+ }
+ 
+ #footer-top{
+   display: none !important;
+ }
+ 
+ #hero-image {
+   max-height: 800px;
+ }
+ 
+ .material-icons {
+   color: #31A354;
+ }
+ 
+ #team-icon {
+   color: #ffffff;
+   font-size: 200% !important;
+ }
+ 
+ #team h4 {
+   font-family: 'Playfair Display', serif;
+   margin-bottom: 50px
+ }
+ 
+ #team h6 {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   margin-bottom: 50px;
+   font-size: 125% !important;
+ }
+ 
+ #mission .material-icons {
+   color: #31A354;
+   font-size: 200% !important;
+ }
+ 
+ #mission h4 {
+   font-family: 'Playfair Display', serif;
+ }
+ 
+ #quote {
+   font-family: 'Playfair Display', serif;
+ }
+ 
+ #quote-block {
+   padding-bottom: 2%;
+   padding-top: 2%;
+ }
+ 
+ #nav-bar {display: none !important;}
+ 
+ #get-started-button {
+   background-color: #31A354;
+ }
+ 
+ .footer-copyright {
+   background-color: #31A354 !important;
+ }
+ 
+ .footer-copyright img {
+   max-height: 20px;
+   width: auto;
+ }
+ 
+ #search-description {
+   font-size: 200%;
+   line-height: 1.5em;
+ }
+ 
+ 
