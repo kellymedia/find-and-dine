@@ -1,48 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wine & Dine</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Find & Dine | Recipe Search</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,500;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="./assets/css/style.css" type="text/css" rel="stylesheet"/>
+  <script src="https://developer.edamam.com/attribution/badge.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">Wine and Dine</a>
-          <p>Search for Recipes</p>
-        </div>
-      </nav>
+  <nav class="white" role="navigation" id=nav-bar>
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
 
-      <div class= "container">
-          <div class= "row">
-            <div class= "col s6">
-                <input placeholder="ex. chicken" id="ingredients" type="text" class="validate">
-                  <label for="ingredients">Search Recipes</label>    
-                </div>
-                <div class= "col s6">
-                    <input placeholder="ex. margharita" id="cocktails" type="text" class="validate">
-                      <label for="cocktails">Search Cocktails</label>    
-                    </div>
-          </div>
-          <div class= "row">
-            <div class="col s12">
-              <div class="card">
-                <div class="card-image">
-                  <img> 
-                  <!--recipe results-->
-                  <span class="card-title">Recipe Result</span>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                </div>
-              </div>
-            </div>
-          </div> 
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container hero">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center">Find & Dine</h1>
+        <div class="row center" id="slogan">
+          <h5 class="header col s12 light">You’ve got ingredients — we’ve got recipes.</h5>
+        </div>
+        <div class="row center">
+          <a href="#" id="get-started-button" class="btn-large waves-effect waves-light lighten-1">Get Started</a>
+        </div>
       </div>
-</body>
+    </div>
+    <div class="parallax"><img src="./assets/img/red-tomatoes-and-garlics-in-cooking-pot-1487510.jpg" alt="red tomatoes and garlic" id="hero-image"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">kitchen</i></h2>
+            <h6 class="center">Step 1</h6>
+            <h5 class="center">Choose your ingredients</h5>
+            <p class="light">What are we working with? Tell us what ingredients you have in your pantry or refrigerator. List any ingredients you wnt to use.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">search</i></h2>
+            <h6 class="center">Step 2</h6>
+            <h5 class="center">Search for recipes</h5>
+            <p class="light">The Find & Dine app will take your ingredients list and provide recipe ideas for your meal. We have 1.7+ million delicious recipes to search through for ideas that can be prepared using your ingredients.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">restaurant</i></h2>
+            <h6 class="center">Step 3</h6>
+            <h5 class="center">Enjoy your meal</h5>
+            <p class="light">This is our favorite part! Choose a recipe that looks tasty to you. The cooking part we will leave up to you. <em>Bon appetit!</em></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div>
+              <p class="light center-align" id="search-description">Enter your ingredients here to see what kinds of recipe ideas we can come up with.</p>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Enter you ingredients here</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col s12 center">
+        <div class="card">
+          <div class="card-image">
+            <img src="./assets/img/person-preparing-food-3976554.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./assets/img/person-preparing-food-3976554.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./assets/img/person-preparing-food-3976554.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./assets/img/person-preparing-food-3976554.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="./assets/img/person-preparing-food-3976554.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-container valign-wrapper" id="quote-block">
+        <div class="row center-align">
+          <h2 class="header col s12 light" id="quote"><q>Cooking well doesn't mean cooking fancy.</q></h2>
+          <i><h4>— Julia Child</h4></i>
+        </div>
+    <div class="parallax"><img src="./assets/img/person-making-pasta-tagliatelle-1398688.jpg" alt="person making pasta"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center" id="mission">
+          <h2 class="center"><i class="material-icons">local_pizza</i></h2>
+          <h4>Our Mission</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center" id="team">
+          <h2 class="center"><i class="material-icons" id="team-icon">local_dining</i></h2>
+          <h4 class="header col s12 light">Our Code Chefs</h4>
+          <div class="col s2"><h6>Kekeli Afantchao</div>
+          <div class="col s2"><h6>Scott St. Germain</h6></div>
+          <div class="col s2"><h6>Michael Kelly</h6></div>
+          <div class="col s2"><h6>John Manouse</h6></div>
+          <div class="col s2"><h6>Matthew Nelson</h6></div>
+          <div class="col s2"><h6>Tanisha Sandiford</h6></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="./assets/img/group-of-people-making-toast-3184183.jpg" alt="group of people making a toast"></div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="container" id="footer-top">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright center">
+      <div class="container"><a href="https://www.pexels.com">
+        <img src="https://images.pexels.com/lib/api/pexels-white.png" />
+      </a></div>
+      <div class="container">Made by <a class="text-lighten-3" href="http://materializecss.com">Materialize</a></div>
+      <div class="container" id="edamam-badge" data-color="white"></div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/init.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  </body>
 </html>
