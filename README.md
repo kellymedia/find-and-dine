@@ -1,7 +1,11 @@
 # Find & Dine
 
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+
 ## Description
 This web app provides recipe ideas for users based on the ingredients they want to use. A user can enter their ingredients in the search field to find recipe ideas for their meal.
+
+
 
 ## Sources
 https://www.pexels.com/api/new/ /
@@ -11,6 +15,12 @@ https://materializecss.com/ /
 ## Demo
 
 Click here for a [demo](https://kellymedia.github.io/find-and-dine/) of this project.
+
+https://kellymedia.github.io/find-and-dine/
+
+This image demonstrates the app functionality:
+
+![Demo Screenshot](./assets/img/find-and-dine.png "application demo screenshot")
 
 ## Presentation 
 Click here to view the [presentation slide deck](https://docs.google.com/presentation/d/1JO5FZU-luV9tPNfq06gPceGniNkAUu3HxsO7Yhjz2jo/edit?usp=sharing).
