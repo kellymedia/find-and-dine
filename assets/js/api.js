@@ -13,7 +13,7 @@ $.ajax({
     var pic = $('<img>')
     pic.attr('src', data.photos[0].src.large)
  //   $('.container').append(pic)
-    console.log(img)
+    // console.log(img)
 
     
  
