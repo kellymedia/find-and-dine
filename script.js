@@ -4,7 +4,6 @@
 */
 
 
-
 $(document).ready(function() {
   $("#ingredients").on("keypress", function(event) {
     if (event.key === "Enter") {
@@ -12,8 +11,10 @@ $(document).ready(function() {
       console.log(ingredientsVal);
       buildQueryURL(ingredientsVal)  
     }
-  
+    $("#recipe-results-card").hide();
+
   if (ingredientsVal === undefined) {
+    console.log("ingredientsVal is undefined");
     return;
   }
   })
@@ -25,6 +26,8 @@ function buildQueryURL(ingredientsVal){
   var queryURL = "https://api.edamam.com/search?q=" + ingredientsVal + "&app_id=" + appID + "&app_key=" + apiKey;
 
   console.log("buildQueryURL function is executing");
+  $("#recipe-results-card").show();
+
   $.ajax({
     url: queryURL,
     method: "GET",
