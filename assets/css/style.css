@@ -153,6 +153,15 @@
  #get-started-button {
    background-color: #31A354;
  }
+
+ #recipe-results-card {
+   margin-top:50px;
+ }
+
+ #recipe-results-card span{
+  color: #888888;
+  padding-left: 0px !important;
+}
  
  .footer-copyright {
    background-color: #31A354 !important;
