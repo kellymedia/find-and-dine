@@ -1,7 +1,7 @@
 console.log ("Js file is loaded")
 
 $.ajax({
-    url: "https://api.pexels.com/v1/search?query=cutting%20board&size=large",
+    url: "https://api.pexels.com/v1/search?query=vegetables&orientation=landscape&size=large",
     headers: { "Authorization" : "563492ad6f917000010000015eb8fc8048ae495794945651de698734" }
 }).then(function(data){
     console.log('KitchenPics', data)
